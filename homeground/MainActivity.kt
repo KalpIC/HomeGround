@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        sharedprefbtn.setOnClickListener {
+            intent = Intent(this, SharedPrefActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
 

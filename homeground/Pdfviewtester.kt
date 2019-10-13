@@ -76,14 +76,16 @@ class Pdfviewtester : AppCompatActivity(){
 //        var url3 = "https://bit.ly/2Vwbu0H"
 //        var finalurl = "https://docs.google.com/gview?embedded=true&url="+url3
 
-        mwebview!!.loadUrl("https://www.gtu.ac.in/Circular.aspx")
+//        mwebview!!.loadUrl("https://www.gtu.ac.in/Circular.aspx")
+
+        mwebview!!.loadUrl("https://mygtuapp.wordpress.com/")
 //        if (btnkey == 1) {
 //            mwebview!!.loadUrl("https://www.gtu.ac.in")
 //
 //        }
 
 
-
+//?android:attr/progressBarStyle
 
         mwebview!!.setDownloadListener { url, userAgent, contentDisposition, mimeType, contentLength ->
             val request = DownloadManager.Request(Uri.parse(url))
